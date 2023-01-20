@@ -8,9 +8,9 @@ word = 0
 while answ == "s":
     answ = str.lower(input("Voce quer gerar uma wordlist?(S/N)"))
     if answ != "s":
-        print ("Voce decidiu nao fazer uma wordlist.. parando o script")
+        print ("Voce decidiu nao fazer uma wordlist... parando o script")
         break
-    print("Para parar de entrar com palavras digite -0")
+    print("Voce decidiu criar uma wordlist.\nPara parar de entrar com palavras digite -0")
     while word != "-0":
         counter += 1
         word = input("Digite uma palavra: ")
