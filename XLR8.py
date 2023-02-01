@@ -5,22 +5,24 @@ counter = 0
 answ = "s"
 word = 0
 
+print("Welcome ☠️ .\nIt's a wordlist generetor made by Xlr8.")
+
 while answ == "s":
-    answ = str.lower(input("Voce quer gerar uma wordlist?(S/N)"))
+    answ = str.lower(input("1-Do you want to generete a wordlist?(S/N): "))
     if answ != "s":
-        print ("Voce decidiu nao fazer uma wordlist... parando o script")
+        print ("•You chosen to do not make a wordlist, stopping the scrip.")
         break
-    print("Voce decidiu criar uma wordlist.\nPara parar de entrar com palavras digite -0")
+    print("2-You chosen to generete a wordlist.\nTo stop adding words type -0.")
     while word != "-0":
         counter += 1
-        word = input("Digite uma palavra: ")
+        word = input("•Type a word: ")
         if word == "-0":
-            print("Voce escolheu parar de entrar palavras")
+            print("•You chosen to stop adding words.")
             break
         else:
             words.append(word)
-    senhas = int(input("Quantas palavras personalizadas voce quer?: "))
-    dig = int(input("Quantos caracteres voce quer?: "))
+    senhas = int(input("3-How many words do you want to generete? "))
+    dig = int(input("4-How many caracteres do you want? "))
     wordlist = []
     list1 = []
     list2 = []
@@ -39,5 +41,5 @@ while answ == "s":
         file.write(i)
         file.write("\n")
         file.close
-    print ("Finalizando")
+    print ("•Wordlist gerada com sucesso. \n -~-~-> XLR$ <-~-~-")
     break
